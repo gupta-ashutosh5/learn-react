@@ -1,0 +1,41 @@
+You should use functional components when:
+
+The component does not need to maintain its own state.
+The component does not need to access the lifecycle methods.
+You want to write less code and make it more readable.
+
+With the introduction of Hooks in React 16.8, you 
+can now use state, lifecycle methods, and other 
+features that were only available in class components, 
+right in your functional components. 
+This makes functional components even more useful.
+
+Q - what benefit functional component state method has over class component
+A - Functional components with state (using the useState hook) have several 
+advantages over class components:
+
+Simplicity: Functional components are generally simpler and easier to understand 
+than class components. You don't need to understand concepts like this context, 
+constructors, or lifecycle methods.
+
+Less Boilerplate: With functional components, you don't need to write boilerplate 
+code like constructor, this.state, or this.setState.
+
+Hooks: With hooks like useState, useEffect, useContext, and others, you can use 
+state and other React features without writing a class. This makes your code more 
+reusable and easier to test.
+
+Optimization: React team has mentioned that in future, there might be performance 
+optimizations specifically for functional components.
+
+Conciseness: Functional components with hooks often lead to shorter, more readable 
+code. State and effects are more explicit and easier to reason about.
+
+Improved Testing and Debugging: Hooks make it easier to extract stateful logic 
+from a component, which makes your components more testable and potentially 
+increases your ability to debug your app.
+
+Remember, both functional and class components have their use cases and it's not 
+about replacing one with the other. It's about having more options and being able 
+to choose the best tool for the job.
+

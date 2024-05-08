@@ -1,0 +1,41 @@
+React components are the building blocks of any React application. 
+They are JavaScript classes or functions that optionally accept inputs, 
+known as 'props', and return a React element that describes how a section of the 
+UI should appear.
+
+There are two types of components in React: 
+Functional components and 
+Class components.
+
+Functional components are just JavaScript functions. They take in optional props 
+as arguments and return a React element.
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+Class components are more complex. They define a render method that returns a 
+React element and can have additional methods to handle lifecycle events.
+
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+
+The lifecycle of a React component can be defined in three distinct phases: 
+Mounting, Updating, and Unmounting.
+
+Mounting: This phase covers the time when the component is being created and 
+inserted into the DOM. The methods called in this phase are: constructor, static 
+getDerivedStateFromProps, render, and componentDidMount.
+
+Updating: This phase starts when a component's props or state change. The methods 
+called in this phase are: static getDerivedStateFromProps, shouldComponentUpdate, 
+render, getSnapshotBeforeUpdate, and componentDidUpdate.
+
+Unmounting: This phase occurs when the component is being removed from the DOM. 
+The method called in this phase is componentWillUnmount.
+
+Note: As of React 16.8, you can use Hooks to handle side effects in functional 
+components, which can replace lifecycle methods in class components. 

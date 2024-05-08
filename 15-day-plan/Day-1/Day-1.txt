@@ -1,0 +1,94 @@
+Topic-1: React and its core components:
+
+React is a JavaScript library for building user interfaces, primarily for
+single-page applications. It's maintained by Facebook and a community of
+individual developers and companies. React allows developers to create large 
+web applications that can update and render efficiently in response to data 
+changes.
+
+Here are some of its core concepts:
+
+Components: React code is made of entities called components. 
+Components are JavaScript classes or functions that optionally accept inputs, 
+i.e., properties (props), and return a React element that describes how a section
+of the UI should appear.
+
+The Virtual DOM: React maintains a lightweight representation of the real DOM 
+in memory, and that is known as the virtual DOM. When the state of an object 
+changes, React updates the virtual DOM as opposed to the real DOM.
+
+JSX: JSX is a syntax extension for JavaScript that is used to describe what the 
+UI should look like. JSX may remind you of a template language, but it comes with
+the full power of JavaScript.
+
+State & Props: State is a data structure that starts with a default value when a 
+component mounts. It may be mutated across time, mostly as a result of user events. 
+Props (short for properties) are a way of passing data from parent to child components.
+
+Lifecycle Methods: Lifecycle methods are special methods that automatically get 
+called as your component gets rendered, updated, and unmounted.
+
+Hooks: Hooks are a new addition in React 16.8 that let you use state and other 
+React features without writing a class. Hooks are functions that let you 
+“hook into” React state and lifecycle features from function components.
+
+Topic-2: Set up a basic React development environment.
+
+To set up a basic React development environment, you will need Node.js, npm, 
+and the Create React App command line tool. Here's a step-by-step guide:
+
+1. Install Node.js and npm: Node.js is a JavaScript runtime that allows you to 
+run JavaScript on your server or your machine. npm is a package manager for 
+Node.js. You can download Node.js and npm from the official Node.js website.
+
+2. Install Create React App: Create React App is a command line tool that helps 
+you create new React.js applications. You can install it globally on your 
+machine using npm.
+
+3. Create a new React application: Use the Create React App command line tool 
+to create a new React application.
+
+Here's the corresponding code:
+
+# Step 1: Install Node.js and npm
+# Visit https://nodejs.org/en/download/ and follow the instructions
+
+# Step 2: Install Create React App
+npm install -g create-react-app
+
+# Step 3: Create a new React application
+npx create-react-app my-app
+
+# Step 4: Change into the new app directory
+cd my-app
+
+# Step 5: Start the application
+npm start
+
+After running these commands, your basic React development environment should be 
+set up. You can now start developing your React application.
+
+Topic-3 : Create a "Hello World" React application.
+
+To create a "Hello World" React application, you can use the Create React App tool that you installed earlier. Here's a step-by-step guide:
+
+Create a new React application using Create React App.
+Navigate into the new application's directory.
+Open the src/App.js file.
+Replace the existing code with a simple "Hello World" component.
+Start the application.
+
+import React from 'react';
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Hello World</h1>
+    </div>
+  );
+}
+
+export default App;
+
+Finally, start the application:
+npm start
